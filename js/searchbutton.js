@@ -1,0 +1,1 @@
+<script type = "text/javascript"> document.getElementsById(SearchForm).submit = function(){window.location = 'http:google.com/Search?q=site:sacredhearttaung.com' + document.getElementById('test').value;return false}</script>

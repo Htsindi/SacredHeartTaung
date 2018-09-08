@@ -1,0 +1,26 @@
+/*!
+ * Start Bootstrap - Round About (https://startbootstrap.com/template-overviews/round-about)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-round-about/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+.navbar {
+  font:bold 14px Arial;
+  text-decoration: none; 
+  background-color:navy;
+  color: yellow;
+  border-top: 1px solid #cccccc:;
+  border-right: #333333;
+  border-bottom: #333333;
+  border-left: #333333;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}

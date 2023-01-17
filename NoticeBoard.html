@@ -1,144 +1,155 @@
-<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Whiteboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- Bootstrap core CSS-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Page level plugin CSS-->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+ <!-- Custom styles for this template -->
+    
+    <link href="css/Home.css" rel="stylesheet">
+    <link href="css/Staff.css" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/NoticeBoard.css" rel="stylesheet">
-
- </head>
-
-
-
-  <body id="page-top" background="Pictures/Announcement.jpg">
-
-    <nav class="navbar navbar-light fixed-top navbar-expand-lg">
-    
-    <div class="container">
-            <img class="logo" src="Pictures/logo.jpg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon SchoolColors"></span>
-           </button>
-    
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-     
-      <ul class="navbar-nav ml-auto">     
-          <li class="nav-item active">
-            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='Index.html'" type="button"><font color="yellow">Home</font></button>
-            <a><span class="sr-only"><font color="yellow">(current)</font></span></a>
-             </li>
-
-                      </li>
-          <li class="nav-item active">
-               <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='NoticeBoard.html'" type="button"><font color="yellow">NoticeBoard</font></button>              
-                </li>
-
-          <li class="nav-item">
-                         <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='OurSchool.html'" type="button"><font color="yellow">Our School</font></button>
-                                    </li>
-
-          <li class="nav-item">
-                         <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='Staff.html'" type="button"><font color="yellow">Staff</font></button>
-                      </li>
-
-          <li class="nav-item">
-            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" type="submit" onclick="window.location.href='mailto:administrator@sacredhearttaung.org'"><font color="yellow"> Contact</button>
-                </li>
+    <link href="css/NoticeBoardOnly.css" rel="stylesheet">
+    <script type="text/javascript" src="vendor/jquery/jquery-2.1.4.js"></script>
+   
+   
+    <title>NoticeBoard</title>
+  </head>
+  <body id="page-top1" background="Pictures/Announcement.jpg">
 
 
+<!-- NavBar -->
+    <nav class="navbar navbar-light fixed-top navbar-expand-lg"> 
+      <div class="container">
+        <img class="logo" src="Pictures/logo.jpg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon SchoolColors"></span>
+        </button>
+      <div class="ml-auto">
+        <gcse:searchbox-only></gcse:searchbox-only>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">     
+            <li class="nav-item active">
+              <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='Index.html'" type="button"><font color="yellow">Home</font>
+              </button>
+            </li>
+            <li class="nav-item active">
+              <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='Policies.html'" type="button"><font color="yellow">Policies</font></button> 
+            </li>
+            <li class="nav-item active">
+              <button class="btn btn-outline-success my-2 my-sm-0 nav-link active" onclick="location.href='NoticeBoard.html'" type="button"><font color="yellow">NoticeBoard</font>
+              </button>              
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='OurSchool.html'" type="button"><font color="yellow">Our School</font>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='Staff.html'" type="button"><font color="yellow">Staff</font>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-success my-2 my-sm-0 nav-link" type="submit" onclick="window.location.href='Contact.html'"><font color="yellow"> Contact</font>
+              </button>
+            </li>
+          </ul>
+      </div>
+    </nav>
 
-<!-- Search -->
-      <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-               </div>
-        </nav>
- 
- <!--sidebar-->
+       
+<!--sidebar-->
 
 <div id="wrapper">
      <ul class="sidebar navbar-nav">
       
             <li class="nav-item text-center">
-                <H6><u>Notices</u></H6>
+                <H6><FONT color="yellow" ><u>Notices</u></FONT></H6>
                 </li>
       
             <li class="nav-item">
-                <a class="nav-link" href="Pictures/Announcement.jpg"><FONT color="yellow" >News</FONT></a>
+                <a class="nav-link" href="https://drive.google.com/file/d/1TPPKAtNLMVtfuqo4HY_GnZOl-baTTFWw/view?usp=sharing"><FONT color="yellow" >First Quarter</FONT></a>
                 </li>
             <li class="nav-item">
-                <a class="nav-link" href="Doc/CalenderOfActivities.pdf"><FONT color="yellow" >Calendar of Activities</FONT></a>
+                <a class="nav-link" href="https://drive.google.com/file/d/1zwrTLBGRQaFUE70XomHU6nWgmWDHwN4J/view?usp=sharing"><FONT color="yellow" >Second Quarter</FONT></a>
+                </li>
+             <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/file/d/1ZwFdaRIKSplYLPX4_btbmQg2MxaiC0Vm/view?usp=sharing"><FONT color="yellow" >Third Quarter</FONT></a>
+                </li>
+             <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/file/d/1mciMX0NjlXrUUEgzcxVPn1-OSHANX2Hj/view?usp=sharing"><FONT color="yellow" >Fourth Quarter</FONT></a>
                 </li>
        
           
         <div class="dropdown-divider"></div>
 
+             <li class="nav-item text-center">
+                <H6><FONT color="yellow" ><u>Magazines</u></FONT></H6>
+                </li>
+
             <li class="nav-item">
-                  <h6 class="text-center"><u><FONT color="yellow" >School Policies:</FONT></u></h6>
+                  <a class="nav-link" href="Doc/Magazines/Previous.pdf"><FONT color="yellow" >Current</FONT></a>
                   </li>
             <li class="nav-item">
-                  <a class="nav-link" href="Doc/CatholicEthos.html"><FONT color="yellow" >Catholic Ethos</FONT></a>
+                  <a class="nav-link" href="Doc/Magazines/SecondPrevious"><font color="yellow">Previous</font></a>
                   </li>
             <li class="nav-item">
-                  <a class="nav-link" href="Doc/AdmissionPolicy.html"><font color="yellow">Admission Policy</font></a>
-                  </li>
-            <li class="nav-item">
-                  <a class="nav-link" href="Doc/SchoolRules.html"><FONT color="yellow" >School Rules</FONT></a>
+                  <a class="nav-link" href="Doc/Magazines/SchoolRules.html"><FONT color="yellow" >Second Previous</FONT></a>
                   </li>
                       
         <div class="dropdown-divider"></div>
 
             <li class="nav-item" >
-                  <h6 class="text-center" ><u><FONT color="yellow" >Learner Policies:</FONT></u></h6>
+                  <h6 class="text-center" ><u><FONT color="yellow" >Media:</FONT></u></h6>
                   </li>
             <li class="nav-item">    
-              <a class="nav-link" href="Doc/CodeOfConduct.html"><FONT color="yellow" >Code Of Conduct</FONT></a>
+              <a class="nav-link" href="https://drive.google.com/drive/folders/1e-EFQEBKpOAnpk8df-6cZlAJBgpVZSGN?usp=sharing"><FONT color="yellow" >Videos</FONT></a>
                   </li>
             <li class="nav-item">
-                  <a class="nav-link" href="Doc/Obligations.html"><FONT color="yellow" >Obligations</FONT></a>
+                  <a class="nav-link" href="https://drive.google.com/drive/folders/1WkU_9HlcUm215dOxnLo_cobGJZvuEQ7g?usp=sharing"><FONT color="yellow" >Pictures</FONT></a>
                   </li>
 
          <div class="dropdown-divider"></div>
 
-            <li class="nav-item" >
-                  <h6 class="text-center" ><u><FONT color="yellow" >Other:</FONT></u></h6>
-                  </li>
+               <li class="nav-item text-center">
+                <H6><FONT color="yellow" ><u>School Policies</u></FONT></H6>
+                </li>
+
             <li class="nav-item">
-                  <a class="nav-link" href="Doc/CodeOfConduct.html"><FONT color="yellow" >Vacancies</FONT></a>
+                  <a class="nav-link" href="Policies.html"><FONT color="yellow" >Policies</FONT></a>
                   </li>
   </ul>
 </div>
-        
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+      
+ <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top1">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
       <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
-  
+
+     <!--Search -->
+    <script type="text/javascript" src="js/search2.js" ></script>
+    
   </body>
 
 </html>

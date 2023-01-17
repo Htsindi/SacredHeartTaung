@@ -1,1 +1,4 @@
-<script type = "text/javascript"> document.getElementsById(SearchForm).submit = function(){window.location = 'http:google.com/Search?q=site:sacredhearttaung.com' + document.getElementById('test').value;return false}</script>
+function dos10(a1) {
+	window.open('http://www.anazi.co.za/searchByName.aspx?SearchText=' + a1, 'a1window');
+	// body...
+}

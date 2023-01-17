@@ -9,67 +9,50 @@ html {
   min-height: 100%;
 }
 
-div {
+ body.fixed-nav.sidebar-toggled #content-wrapper {
+    padding-left: 90px;
 
+  }
+
+#page-top {
+  height: 100%;
+  background-repeat: repeat;
+  background-position: right;
 }
+
+#page-top1 {
+  height: 100%;
+  background-repeat: repeat;
+  background-position: right;
+}
+
 .navbar {
   font:bold 14px Arial;
   text-decoration: none; 
   background-color:navy;
-  border: 2px solid yellow;
+  border: 1px solid yellow;
 } 
 .navbar-expand{
   -sm|-md|-lg|-xl
 }
 
-
-body {
-  height: 100%;
-  background-repeat: repeat;
-  background-position: right;
-
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #28a745;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
 
-.SchoolColors {
-  background-color: navy;
-  color: yellow;
-  text-align: center;
-  border: 2px solid yellow;
+#myTab {
+  padding-top: 15px;
 }
 
 
-#wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#wrapper #content-wrapper {
-  overflow-x: hidden;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 80px;
-}
-
-body.fixed-nav #content-wrapper {
-  margin-top: 56px;
-  padding-left: 90px;
-}
-
-body.fixed-nav.sidebar-toggled #content-wrapper {
-  padding-left: 0;
-}
 
 @media (min-width: 768px) {
   body.fixed-nav #content-wrapper {
     padding-left: 225px;
   }
-  body.fixed-nav.sidebar-toggled #content-wrapper {
-    padding-left: 90px;
-
-  }
-}
-
+ 
 .scroll-to-top {
   position: fixed;
   right: 15px;

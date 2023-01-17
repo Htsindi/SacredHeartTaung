@@ -1,85 +1,88 @@
-<!DOCTYPE html>
-<html l0
-ang="en">
+<html lang="en">
 
-  <head>
-
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MissionValues</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
+     <!-- Custom styles for this template -->
+    <link href="css/Home.css" rel="stylesheet">
     <link href="css/Staff.css" rel="stylesheet">
+    <script type="text/javascript" src="vendor/jquery/jquery-2.1.4.js"></script>
 
-   </head>
-
+    <title>SchoolPage</title>
+  </head>
   <body>
+
 
 <!-- NavBar -->
 
-    <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+<nav class="navbar navbar-light fixed-top navbar-expand-lg">
     
-    <div class="container">
+<div class="container">
             <img class="logo" src="Pictures/logo.jpg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon SchoolColors"></span>
            </button>
+
+<div class="ml-auto">
+           <gcse:searchbox-only></gcse:searchbox-only>
+      </div>
     
     <div class="collapse navbar-collapse" id="navbarResponsive">
      
       <ul class="navbar-nav ml-auto">     
           <li class="nav-item active">
-            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='Index.html'"><font color="yellow">Home</font></button>
+            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='Index.html'" type="button"><font color="yellow">Home</font></button>
             <a><span class="sr-only"><font color="yellow">(current)</font></span></a>
-             </li>
-
-                      </li>
+          </li>
           <li class="nav-item active">
-               <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='NoticeBoard.html'"><font color="yellow">NoticeBoard</font></button>              
+            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='Policies.html'" type="button"><font color="yellow">Policies</font></button> 
+          </li>
+          <li class="nav-item active">
+               <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='NoticeBoard.html'" type="button"><font color="yellow">NoticeBoard</font></button>              
                 </li>
 
           <li class="nav-item">
-                         <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='OurSchool.html'"><font color="yellow">Our School</font></button>
+                         <button class="btn btn-outline-success my-2 my-sm-0 nav-link active" onclick="window.location.href='OurSchool.html'" type="button"><font color="yellow">Our School</font></button>
                                     </li>
 
           <li class="nav-item">
-                         <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='Staff.html'"><font color="yellow">Staff</font></button>
+                         <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='Staff.html'" type="button"><font color="yellow">Staff</font></button>
                       </li>
 
           <li class="nav-item">
-            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" type="submit" onclick="window.location.href='mailto:administrator@sacredhearttaung.org'"><font color="yellow"> Contact</button>
+            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" type="submit" onclick="window.location.href='Contact.html'"><font color="yellow"> Contact</button>
                 </li>
-<!-- Search -->
-      <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+
             </div>
                </div>
         </nav>
 
     <header>
-     <div class="container">
-  <h1 class="Commitment">Our Commitment</h1>
-  <div class="list-group">
-    <a href="#" class="list-group-item active">Vison</a>
-    </div>Our Vision is to mould the character of our children through spiritual guidance and quality education so that they may become useful citizens who will serve the society and the country selflessly.
-  <div class="list-group">  
-    <a href="#" class="list-group-item active">Misson</a>
-    </div>We Facilitate a peaceful atmosphere for active learning and Teaching. We promote cordial relationship among learners and educators, between the home and the school. We produce a disciplined society through the behaviour of our learners. We inculcate in our children faith in God through Religious and Moral Education. The children are encouraged to accept responsibility for their actions. It is our Mission to develop the whole child – physically, intellectually, emotionally and spiritually.
-  <div class="list-group">  
+     
+     <div class="container"><font color="yellow">
+        <h1 id="Commitment">Our Commitment</h1>
+          <div class="list-group SchoolColors">
+            <a href="#" class="list-group-item active">Vision</a>
+          </div>
+    
+          <p>Our Vision is to mould the character of our children through spiritual guidance and quality education so that they may become useful citizens who will serve the society and the country selflessly.</p>
+  <div class="list-group SchoolColors">  
+    <a href="#" class="list-group-item active">Mission</a>
+  </div>
+    In learning and Teaching. We promote cordial relationship among learners and educators, between the home and the school. We produce a disciplined society through the behaviour of our learners. We inculcate in our children faith in God through Religious and Moral Education. The children are encouraged to accept responsibility for their actions. It is our Mission to develop the whole child – physically, intellectually, emotionally and spiritually.
+  <div class="list-group SchoolColors">  
     <a href="#" class="list-group-item active">Values</a>
-    </div>Celebrate our religious identity promote spiritual, academic, emotional and physical growth. Nurture mutual respect, justice and compassion in our multi-cultural society. Offer a relevant curriculum in a challenging learning environment so that all may develop to their full potential and to make a positive contribution to society and to face the future with confidence
-</div>
+  </div>
+    Celebrate our religious identity promote spiritual, academic, emotional and physical growth. Nurture mutual respect, justice and compassion in our multi-cultural society. Offer a relevant curriculum in a challenging learning environment so that all may develop to their full potential and to make a positive contribution to society and to face the future with confidence.
 
 
- </div>
  </div>
     </header>
 
@@ -92,8 +95,10 @@ ang="en">
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <!--Search -->
+    <script type="text/javascript" src="js/search2.js" ></script>
 
   </body>
 

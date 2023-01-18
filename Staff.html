@@ -1,69 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-     <!-- Custom styles for this template -->
+    <!-- Custom styles for this template -->
     <link href="css/Home.css" rel="stylesheet">
-    <link href="css/Staff.css" rel="stylesheet">
-    <script type="text/javascript" src="vendor/jquery/jquery-2.1.4.js"></script>
+    <!--link href="css/Staff.css" rel="stylesheet">
+    <script type="text/javascript" src="vendor/jquery/jquery-2.1.4.js"></script-->
+    <title>Staff</title>
+</head>
 
-    <title>StaffPage!</title>
-  </head>
-  <body>
+<body>
 
 
-<!-- NavBar -->
+    <!-- NavBar -->
 
     <nav class="navbar navbar-light fixed-top navbar-expand-lg">
-    
-    <div class="container">
-            <img class="logo" src="Pictures/logo.jpg">
+
+        <div class="container">
+            <img class="logo" alt="school-logo" src="Pictures/logo.jpg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon SchoolColors"></span>
            </button>
 
-<div class="ml-auto">
-           <gcse:searchbox-only></gcse:searchbox-only>
-      </div>
-    
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-     
-      <ul class="navbar-nav ml-auto">     
-          <li class="nav-item active">
-            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='Index.html'" type="button"><font color="yellow">Home</font></button>
-            <a><span class="sr-only"><font color="yellow">(current)</font></span></a>
-             </li>
-          <li class="nav-item active">
-            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='Policies.html'" type="button"><font color="yellow">Policies</font></button> 
-          </li>
-          <li class="nav-item active">
-               <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='NoticeBoard.html'" type="button"><font color="yellow">NoticeBoard</font></button>              
-          </li>
-
-          <li class="nav-item">
-                         <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='OurSchool.html'" type="button"><font color="yellow">Our School</font></button>
-                                    </li>
-
-          <li class="nav-item">
-                         <button class="btn btn-outline-success my-2 my-sm-0 nav-link active" onclick="location.href='Staff.html'" type="button"><font color="yellow">Staff</font></button>
-                      </li>
-
-          <li class="nav-item">
-            <button class="btn btn-outline-success my-2 my-sm-0 nav-link" type="submit" onclick="window.location.href='Contact.html'"><font color="yellow"> Contact</button>
-                </li>
-
+            <div class="ml-auto">
+                <gcse:searchbox-only></gcse:searchbox-only>
             </div>
-               </div>
-        </nav>
 
-<!--Boddy-->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='Index.html'" type="button">Home</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='Policies.html'" type="button">Policies</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='NoticeBoard.html'" type="button">NoticeBoard</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success my-2 my-sm-0 nav-link" onclick="window.location.href='OurSchool.html'" type="button">Our School</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn active btn-outline-success my-2 my-sm-0 nav-link" onclick="location.href='Staff.html'" type="button">Staff</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success my-2 my-sm-0 nav-link" type="submit" onclick="window.location.href='Contact.html'">Contact</button>
+                    </li>
+            </div>
+
+        </div>
+    </nav>
    
  <!-- Page Content -->
     <div class="container">
@@ -81,56 +75,42 @@
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/M. Muturi.jpg" alt="">
           <h3>Mr M. Muturi
-            <small></small>
           </h3>Principal
           <p>He Teaches Religious Education in Grade 7</p>
         </div>
 
-
- <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/C. Eilerd.jpg" alt="">
-          <h3>Ms C. Eilerd
-            <small></small>
-          </h3>Vice Principal
-          <p>She teaches Afrikaans in Grade 1 & H.O.D for Foundation and Senior Phase</p>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/L. Mutumbi.jpg" alt="">
+          <h3>Mr L. Mutumbi</h3>
+          <p>Deputy Principal</p>
+          <p>He teaches English in Grade 6 and 7 and R.E in Grade 6</p>
         </div>
+
 
  <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/F. Mavolwane.jpg" alt="">
           <h3>Ms F. Mavolwane 
-            <small></small>
           </h3>H.O.D for Inter-Mediate phase
           <p>She teaches English and EMS in grade 6 and 7</p>
-        </div>
-
-<div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/S. Goiwakae.jpg" alt="">
-          <h3>Ms S. Goiwakae
-            <small></small>
-          </h3>Senior Teacher
-          <p>She Teaches Setswana in Grade 6 and 7</p>
-        </div>
-
-<div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/L. Oliphant.jpg" alt="">
-          <h3>Mr L. Oliphant
-            <small></small>
-          </h3>
-          <p>Admin Assistant</p>
-        </div>       
+        </div>  
 
  <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/A. Badenhorst.jpg" alt="">
           <h3>Ms A. Badenhorst
             <small></small>
           </h3>
-          <p>Admin Assistant</p>
+          <p>Administrator</p>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/B. Gasekoma.jpg" alt="">
+          <h3>Ms B. Gasekoma
+          </h3><p>Administrator</p>
         </div>
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/B. Van Niekerk.jpg" alt="">
           <h3>Mrs B. Van Niekerk
-            <small></small>
           </h3>Teacher
           <p>Grade Ra Teacher</p>
         </div>
@@ -145,177 +125,108 @@
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/M. Chikwama.jpg" alt="">
-          <h3>Mrs M. Chikwama
-            <small></small>
-          </h3>Teacher
+          <h3>Mrs M. Chikwama</h3>
+          <p>Teacher</p>
           <p>Grade 1A Class Teacher</p>
         </div>
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/L. Kumadey.jpg" alt="">
-          <h3>Mrs L. Kumadey
-            <small></small>
-          </h3>Teacher
+          <h3>Mrs L. Kumadey</h3>
+          <p>Teacher</p>
           <p>Grade 1B Class Teacher</p>
         </div> 
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/O. Namakula.jpg" alt="">
-          <h3>Ms O. Namakula
-            <small></small>
-          </h3>Teacher
+          <h3>Ms O. Namakula</h3>
+          <p>Teacher</p>
           <p>Grade 2A Class Teacher</p>
         </div>
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/B. Sechogela.jpg" alt="">
-          <h3>Ms B. Sechogela
-            <small></small>
-          </h3>Teacher
-          <p>Grade 2B Class Teacher!</p>
-        </div>
-
-<div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/B. Gasekoma.jpg" alt="">
-          <h3>Ms B. Gasekoma
-            <small></small>
-          </h3>Teacher
-          <p>Grade 3A Class Teacher</p>
-        </div>
-
-<div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/A. Blom.jpg" alt="">
-          <h3>Ms A. Blom
-            <small></small>
-          </h3>Teacher
+          <h3>Ms A. Blom</h3>
+          <p>Teacher</p>
           <p>Grade 3B Class Teacher</p>
         </div>
 
  <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/F. Tamaniwa.jpg" alt="">
-          <h3>Ms F. Tamaniwa
-            <small></small>
-          </h3>Teacher
+          <h3>Ms F. Tamaniwa</h3>
+          <p>Teacher</p>
           <p>Grade 3C Class Teacher</p>
         </div>
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/R. Manyesa.jpg" alt="">
-          <h3>Mrs. R. Manyesa
-            <small></small>
-          </h3>Grade 4B Class Teacher
+          <h3>Mrs. R. Manyesa</h3>
+          <p>Grade 4B Class Teacher</p>
           <p>She teaches Setswana in Inter-mediate phase</p>
         </div>
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/J. Khumbula.jpg" alt="">
-          <h3>Mrs J. Khumbula
-            <small></small>
-          </h3>Grade 5A Class Teacher
+          <h3>Mrs J. Khumbula</h3>
+          <p>Grade 5A Class Teacher</p>
           <p>She teaches English in Inter-mediate phase</p>
         </div>
 
  <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/Y. Baffour.jpg" alt="">
-          <h3>Mr K. Baffour
-            <small></small>
-          </h3>Grade 5B Class Teacher
+          <h3>Mr K. Baffour</h3>
+          <p>Grade 5B Class Teacher</p>
           <p>He teaches Maths in Inter mediate phase</p>
         </div>
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/L. Mutumbi.jpg" alt="">
-          <h3>Mr L. Mutumbi
-            <small></small>
-          </h3>Grade 6A class Teacher
-          <p>He teaches English in Grade 6 and 7 and R.E in Grade 6</p>
-        </div>
-
-<div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/M. Zorra.jpg" alt="">
-          <h3>Ms M. Zorra
-            <small></small>
-          </h3>Grade 6B Class Teacher
-          <p>She teaches Mathematics in Grade 5 & 6</p>
-        </div> 
-
-<div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/F. Fosu.jpg" alt="">
-          <h3>Mr F. Fosu
-            <small></small>
-          </h3>Grade 7B Class Teacher
-          <p>He teaches Natural science and technology</p>
-        </div>
-
-<div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/J. Appiah.jpg" alt="">
-          <h3>Mr J. Appiah
-            <small></small>
-          </h3>Teacher
+          <h3>Mr J. Appiah</h3>
+          <p>Teacher</p>
           <p>He teaches Computer studies from Grade 3 to 7</p>
-        </div>
-
- <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/G. Mogokotleng.jpg" alt="">
-          <h3>Mr G. Mogokotleng
-            <small></small>
-          </h3>Teacher
-          <p>He Teaches S.S, Life Skills & R.E in Inter-mediate phase</p>
         </div>
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/P. Joubert.jpg" alt="">
-          <h3>Mr P. Joubert
-            <small></small>
-          </h3>Teacher
+          <h3>Mr P. Joubert</h3>
+          <p>Teacher</p>
           <p>He teaches Natural Science & Technology in Grade 4 & 5 and Geography Grade 4</p>
         </div>
 
  <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/A. Harmse.jpg" alt="">
-          <h3>Mrs. A. Harmse
-            <small></small>
-          </h3>Teacher
+          <h3>Mrs. A. Harmse</h3>
+          <p>Teacher</p>
           <p>She teaches Creative Art in Foundation Phase & Afrikaans in Grade 2</p>
         </div>
 
  <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/M. De Waal.jpg" alt="">
-          <h3>Mrs M. De Waal
-            <small></small>
-          </h3>Teacher
+          <h3>Mrs M. De Waal</h3><p>Teacher</p>
           <p>Foundation Phase remedial Teacher</p>
         </div>
 
  <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/O. Nchube.jpg" alt="">
-          <h3>Ms O. Nchube
-            <small></small>
-          </h3>Teacher
+          <h3>Ms O. Nchube</h3><p>Teacher</p>
           <p>Assistant Teacher for Foundation Phase</p>
         </div>
 
  <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/I. Twala.jpg" alt="">
-          <h3>Mrs. I. Twala
-            <small></small>
-          </h3>Teacher
+          <h3>Mrs. I. Twala</h3><p>Teacher</p>
           <p>She teaches Setswana in Foundation Phase</p>
         </div>
 
  <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/O. Tyali.jpg" alt="">
-          <h3>Mr. O. Tyali
-            <small></small>
-          </h3>Teacher
+          <h3>Mr. O. Tyali</h3><p>Teacher</p>
           <p>He teaches Social Sciences in Grade 5,6 & 7</p>
         </div>
 
 <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="Pictures/P. Kikuni.jpg" alt="">
-          <h3>Mr P. Kikuni
-            <small></small>
-          </h3>Teacher
+          <h3>Mr P. Kikuni</h3> <p>Teacher</p> 
           <p>He Teaches Music in the Foundation Phase. Creative Art and Physical Education in Inter-mediate and Senior Phase</p>
         </div>         
 

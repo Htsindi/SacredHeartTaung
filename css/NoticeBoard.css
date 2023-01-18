@@ -99,7 +99,7 @@ html {
 }
 
 .navbar-nav .nav-item.active .nav-link {
-  color: #fff;
+  color: gold;
 }
 
 .navbar-nav .nav-item.dropdown .dropdown-toggle::after {
@@ -131,6 +131,15 @@ html {
   top: 0.3rem;
   font-weight: 400;
   font-size: 0.5rem;
+}
+
+.text-center{
+  color: gold;
+  text-align: center;
+  font-size: large;
+}
+.nav-item, .navlink{
+  color: gold;
 }
 
 @media (min-width: 768px) {

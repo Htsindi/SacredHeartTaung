@@ -1,0 +1,16 @@
+.nav { width: 980px; height: 52px; float: left; margin: 10px 0 10px 15px; padding: 0; display: block; list-style-type: none; }
+	.nav li a { height: 52px; display: block; background: url('../img/ie_nav.png') no-repeat; font-family: Arial, Helvetica, sans-serif!important; font-size: 18px; text-decoration: none!important; color: #000!important; text-align: center; line-height: 52px; }
+	.nav li.nav_basics a { width: 10%; background-position: 0 0; }
+	.nav li.nav_basics a:hover { width: 10%; background-position: 0 -52px; }
+	.nav li.nav_basics a.on { width: 10%; background-position: 0 -104px; }
+	.nav li.nav_gradeR a:hover { width: 10%; background-position: -196px -52px; }
+	.nav li.nav_grade1 a { width: 10%; background-position: -196px 0; }
+	.nav li.nav_grade2 a:hover { width: 10%; background-position: -196px -52px; }
+	.nav li.nav_grade3 a.on { width: 10%; background-position: -196px -104px; }
+	.nav li.nav_grade4 a { width: 10%; background-position: -196px 0; }
+	.nav li.nav_grade5 a:hover { width: 10%; background-position: -196px -52px; }
+	.nav li.nav_grade6 a.on { width: 10%; background-position: -196px -104px; }
+	.nav li.nav_grade7 a { width: 10%; background-position: -196px 0; }
+	.nav li.nav_all a { width: 186px; background-position: -794px 0; }
+	.nav li.nav_all a:hover { width: 186px; background-position: -794px -52px; }
+	.nav li.nav_all a.on { width: 186px; background-position: -794px -104px; }
